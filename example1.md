@@ -26,7 +26,7 @@ disp(sum(sum(A)))
 
 If it worked, you should see an embedded numbl above with a matrix operations example.
 
-Here's an example with a Lissajous curve plot:
+Here's a plotting example:
 
 <numbl-embed>
 <iframe width="100%" height="600" frameborder="0"></iframe>

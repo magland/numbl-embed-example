@@ -30,3 +30,24 @@ disp(sum(A, 1))
 </script>
 </numbl-embed>
 ```
+
+It even works with plotting:
+
+```markdown
+<script src="https://numbl.org/numbl-embed.js"></script>
+
+This demonstrates how to embed numbl in a markdown file that can be rendered on GitHub pages.
+
+<numbl-embed>
+<iframe width="100%" height="600" frameborder="0"></iframe>
+<script type="text/plain" class="matlab-script">
+% Damped oscillation
+t = linspace(0, 10, 200);
+y = exp(-0.3 * t) .* sin(2 * pi * t);
+plot(t, y)
+title('Damped Oscillation')
+xlabel('Time')
+ylabel('Amplitude')
+</script>
+</numbl-embed>
+```
