@@ -26,26 +26,17 @@ disp(sum(sum(A)))
 
 If it worked, you should see an embedded numbl above with a matrix operations example.
 
-Here's another example with numerical integration:
+Here's an example with a Lissajous curve plot:
 
 <numbl-embed>
 <iframe width="100%" height="600" frameborder="0"></iframe>
 <script type="text/plain" class="matlab-script">
-% Numerical integration using trapezoidal rule
-a = 0;
-b = pi;
-n = 100;
-
-% Create evenly spaced points
-h = (b - a) / (n - 1);
-x = a:h:b;
-y = sin(x);
-
-% Trapezoidal rule: (h/2) * (y(1) + 2*sum(y(2:end-1)) + y(end))
-integral_approx = (h/2) * (y(1) + 2*sum(y(2:end-1)) + y(end));
-
-disp(['Approximate integral of sin(x) from 0 to pi: ', num2str(integral_approx)])
-disp('Exact value: 2')
-disp(['Error: ', num2str(abs(integral_approx - 2))])
+% Damped oscillation
+t = linspace(0, 10, 200);
+y = exp(-0.3 * t) .* sin(2 * pi * t);
+plot(t, y)
+title('Damped Oscillation')
+xlabel('Time')
+ylabel('Amplitude')
 </script>
 </numbl-embed>
