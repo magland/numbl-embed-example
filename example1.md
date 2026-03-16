@@ -40,3 +40,9 @@ xlabel('Time')
 ylabel('Amplitude')
 </script>
 </numbl-embed>
+
+Here's an interactive REPL where you can type and run commands:
+
+<numbl-embed mode="repl">
+<iframe width="100%" height="500" frameborder="0"></iframe>
+</numbl-embed>

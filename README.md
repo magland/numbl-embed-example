@@ -51,3 +51,13 @@ ylabel('Amplitude')
 </script>
 </numbl-embed>
 ```
+
+You can also embed an interactive REPL with `mode="repl"`:
+
+```markdown
+<script src="https://numbl.org/numbl-embed.js"></script>
+
+<numbl-embed mode="repl">
+<iframe width="100%" height="500" frameborder="0"></iframe>
+</numbl-embed>
+```
